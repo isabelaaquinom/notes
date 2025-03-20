@@ -147,12 +147,12 @@ class MainController extends Controller{
         // 3 - soft delete (property SoftDeletes in model)
         $note->delete();
 
-        // 4- hard delete (property SoftDeletes in model)
+        // 4 - hard delete (property SoftDeletes in model)
         //$note->forceDelete();
 
         // return
         return redirect()->route('home');
-        echo 'blablabla';
+
     }
 
 
