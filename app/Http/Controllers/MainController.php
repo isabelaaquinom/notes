@@ -152,7 +152,7 @@ class MainController extends Controller{
 
         // return
         return redirect()->route('home');
-
+        echo 'blablabla';
     }
 
 
