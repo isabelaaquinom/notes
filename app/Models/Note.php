@@ -9,8 +9,10 @@ class Note extends Model
 {
     use SoftDeletes;
 
+    protected $fillable = ['user_id', 'title', 'text'];
+
     public function user()
     {
-        return $this()->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 }
